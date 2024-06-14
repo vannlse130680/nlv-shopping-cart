@@ -11,7 +11,7 @@ export default {
         <li><a href=""> <strong>Cửa Hàng</strong></a></li>
         <li><a href="#scrollspyProducts"> <strong>Sản Phẩm</strong></a></li>
         <li><a href=""> <strong>Liên Hệ</strong></a></li>
-        <li><a href=""> <strong>FAQS</strong></a></li>
+        <li><a href="/qr"> <strong>FAQS</strong></a></li>
         <li><a href="https://www.instagram.com/nvmaal/"> <strong>NLV</strong></a></li>
       </ul>
     </nav>
