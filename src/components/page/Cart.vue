@@ -185,21 +185,6 @@ export default {
                         <h5>{{ formatNumber(totalPrice) }} đ</h5>
                       </div>
 
-<!--                      <h5 class="text-uppercase mb-3">Mã giảm giá</h5>-->
-
-<!--                      <div class="mb-5">-->
-<!--                        <div class="form-outline">-->
-<!--                          <input-->
-<!--                            type="text"-->
-<!--                            id="form3Examplea2"-->
-<!--                            class="form-control form-control-lg"-->
-<!--                          />-->
-<!--                          <label class="form-label" for="form3Examplea2"-->
-<!--                            >Nhập mã giảm giá của bạn</label-->
-<!--                          >-->
-<!--                        </div>-->
-<!--                      </div>-->
-
                       <hr class="my-4" />
 
                       <div class="d-flex justify-content-between mb-5">
@@ -207,13 +192,9 @@ export default {
                         <h5>{{ formatNumber(totalPrice) }}</h5>
                       </div>
 
-                      <button
-                        type="button"
-                        class="btn btn-primary"
-                      >
+                      <button type="button" class="btn btn-primary">
                         Thanh Toán
                       </button>
-
                     </div>
                   </div>
                 </div>

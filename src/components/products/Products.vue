@@ -2,7 +2,6 @@
 import { formatNumber } from "@/helper/numberFormat.js";
 import router from "@/router/index.js";
 import cart from "@/components/page/Cart.vue";
-import addProductToCart from "@/components/page/AddProductToCart.vue";
 
 export default {
   name: "Products",

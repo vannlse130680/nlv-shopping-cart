@@ -5,24 +5,21 @@ import Page from "@/components/paging/Page.vue";
 
 export default {
   name: "SamsungProducts",
-  components: {Page, SamsungBanner, Products},
+  components: { Page, SamsungBanner, Products },
   props: {
-    samsungProducts: Array
+    samsungProducts: Array,
   },
-}
+};
 </script>
 
 <template>
   <div class="container-fluid">
     <div class="row">
-      <samsung-banner/>
-      <products :products="samsungProducts"/>
+      <samsung-banner />
+      <products :products="samsungProducts" />
     </div>
-    <Page/>
-
+    <Page />
   </div>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

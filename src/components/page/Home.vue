@@ -3,7 +3,7 @@ import Header from "@/components/header/Header.vue";
 import ProductCarousel from "@/components/ProductCarousel.vue";
 import NavigationMenu from "@/components/NavigationMenu.vue";
 import SideBarImages from "@/components/SideBarImages.vue";
-import {formatNumber} from "@/helper/numberFormat.js";
+import { formatNumber } from "@/helper/numberFormat.js";
 import Products from "@/components/products/Products.vue";
 import Footer from "@/components/footer/Footer.vue";
 import AppleBanner from "@/components/banner/AppleBanner.vue";
@@ -18,51 +18,53 @@ export default {
     SamsungProducts,
     AppleProducts,
     Page,
-    SamsungBanner, AppleBanner, Footer, Products, SideBarImages, NavigationMenu, ProductCarousel, Header
+    SamsungBanner,
+    AppleBanner,
+    Footer,
+    Products,
+    SideBarImages,
+    NavigationMenu,
+    ProductCarousel,
+    Header,
   },
   data() {
     return {
-      myProducts: this.$store.state.products
-    }
+      myProducts: this.$store.state.products,
+    };
   },
   computed: {
     appleProducts() {
-      return this.myProducts.filter(item => item.brand === 'Apple')
+      return this.myProducts.filter((item) => item.brand === "Apple");
     },
     samsungProducts() {
-      return this.myProducts.filter(item => item.brand === 'Samsung')
-    }
+      return this.myProducts.filter((item) => item.brand === "Samsung");
+    },
   },
   mounted() {
-    console.log(this.myProducts)
+    console.log(this.myProducts);
   },
   methods: {
-    formatNumber
-  }
-
-}
+    formatNumber,
+  },
+};
 </script>
 
 <template>
   <div class="container">
-    <Header/>
+    <Header />
     <div class="container-fluid">
       <div class="row">
-        <NavigationMenu/>
-        <ProductCarousel/>
-        <SideBarImages/>
+        <NavigationMenu />
+        <ProductCarousel />
+        <SideBarImages />
       </div>
     </div>
-    <div class="main" style="margin-top: 40px;">
-      <apple-products :apple-products="appleProducts"/>
-      <samsung-products :samsung-products="samsungProducts"/>
+    <div class="main" style="margin-top: 40px">
+      <apple-products :apple-products="appleProducts" />
+      <samsung-products :samsung-products="samsungProducts" />
     </div>
-    <Footer/>
+    <Footer />
   </div>
-
 </template>
 
-<style scoped>
-
-
-</style>
+<style scoped></style>
